@@ -6,7 +6,7 @@ Canal público de paquetes estables de **MCP Site Studio**, plugin de WordPress 
 
 1. Abre [la última release estable](https://github.com/JomiSancho/mcp-site-studio-releases/releases/latest).
 2. Descarga `qls-mcp-content-VERSION.zip` y su archivo `.zip.sha256` de esa misma release. Los archivos de código fuente que genera GitHub corresponden a la documentación de este canal; el plugin instalable es el ZIP adjunto con ese nombre.
-3. Comprueba el SHA-256 del ZIP frente al checksum. En Linux/macOS: `sha256sum --check qls-mcp-content-VERSION.zip.sha256`. En PowerShell: `Get-FileHash ./qls-mcp-content-VERSION.zip -Algorithm SHA256` y compara el resultado.
+3. Comprueba el SHA-256 del ZIP frente al checksum. En Linux: `sha256sum --check qls-mcp-content-VERSION.zip.sha256`. En macOS: `shasum -a 256 -c qls-mcp-content-VERSION.zip.sha256`. En PowerShell: `Get-FileHash ./qls-mcp-content-VERSION.zip -Algorithm SHA256` y compara el resultado.
 4. En WordPress, utiliza **Plugins → Añadir plugin → Subir plugin**, instala el ZIP y actívalo. Para actualizar, conserva una copia recuperable y reemplaza el plugin con el mismo slug.
 5. Abre **Herramientas → MCP Site Studio → Preparación** para preparar el adaptador MCP oficial. La autenticación conserva los permisos de WordPress y depende del cliente y del proveedor disponible.
 
